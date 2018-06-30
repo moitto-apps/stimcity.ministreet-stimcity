@@ -1,0 +1,31 @@
+{
+    "default-subview":"V_HOME",
+    "title":"Seller on Steem",
+    "version":"1.0",
+    "uses-database":"yes",
+    "database-version":"2.0",
+    "showcases": {
+        "auxiliary": [
+            {
+                "id":"S_SELLER",
+                "username":"stimcity"
+            }
+        ]
+    },
+    "subviews":{
+    	"V_HOME":{
+    		"catalog":"MainApp",
+    		"subcatalog":"home",
+    		"type":"store",
+            "auxiliary": "S_SELLER"
+    	}
+	},
+	"subcatalogs":{
+		"home":{
+    		"controller":"StoreView",
+	    	"hides-navibar":"yes",
+    		"statusbar-style":"Default",
+    		"title":"홈"
+		}
+	}
+}

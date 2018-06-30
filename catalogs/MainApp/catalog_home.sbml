@@ -1,0 +1,16 @@
+=begin catalog
+
+=begin profile
+
+=object image: image-url="https://steemitimages.com/u/${subview.username}/avatar/large", image-downloadable=yes, style=img_profile
+
+=object label: text="${subview.username}", style=label_username
+
+=end profile
+
+=begin start
+=object button: label="결제 QR코드 만들기", script=show_popup, style=btn_submit
+=end start
+
+
+=end catalog
